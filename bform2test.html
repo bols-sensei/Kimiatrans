@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kimia Trans - Accueil</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+  <style>
+    .hero {
+      background: url('img/2024 Kia Sorento.jpg') center/cover no-repeat;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      position: relative;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+    .btn-custom {
+      background-color: hsl(210, 100%, 50%);
+      color: white;
+      border: none;
+    }
+    .btn-custom:hover {
+      background-color: hsl(210, 100%, 40%);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">🚍 Kimia Trans</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="avatars.html">Membres</a></li>
+          <li class="nav-item"><a class="nav-link" href="bd.html">Base simulée</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="display-3 fw-bold">Kimia Trans</h1>
+      <p class="lead mb-4">Spécialiste du transport urbain et interurbain, <br> toujours à votre service.</p>
+      <a href="avatars.html" class="btn btn-lg btn-custom shadow"><i class="fas fa-users me-2"></i>Voir nos membres</a>
+    </div>
+  </section>
+
+  <!-- Présentation -->
+  <section class="py-5">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-4">Qui sommes-nous ?</h2>
+      <p class="lead text-muted">
+        Kimia Trans est une entreprise dynamique spécialisée dans le transport urbain et interurbain. 
+        Notre objectif est de vous offrir un service fiable, sécurisé et confortable, que ce soit pour vos 
+        déplacements quotidiens ou vos voyages longue distance.
+      </p>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
